@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra nhiệt độ</title>
+</head>
+<body>
+<script>
+    let nhietdo= prompt('nhập vào nhiệt độ')
+    while (nhietdo<20 || nhietdo>100){
+        if (nhietdo<20){
+            alert('quá lạnh')
+            nhietdo = prompt('Giảm nhiệt độ')
+        }else if (nhietdo>100){
+            alert('quá nóng')
+            nhietdo = prompt('Tăng nhiệt độ')
+        }
+    }
+</script>
+</body>
+</html>
