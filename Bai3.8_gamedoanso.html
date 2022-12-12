@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+</head>
+<body>
+<h1>Game đoán số! nhập vào số từ 0 - 9 ể đoán! có 3 lượt chơi</h1>
+<input type="number" id="number">
+<button id="btn" onclick="playGame()">Chơi đê</button>
+<label id="round"></label>
+<p id="result"></p>
+<script>
+    let numberRandom = Math.floor(Math.random()*10)
+    let count=3;
+    document.getElementById('round').innerHTML='số luợt chơi:' + count
+    document.getElementById('btn').innerHTML =' <button>Chơi tiếp</button>'
+    function playGame(){
+        count--;
+        document.getElementById('round').innerHTML='số luợt chơi còn lại:' + count
+        let number =document.getElementById('number').value
+        if (number == numberRandom){
+            document.getElementById('result').innerHTML = 'Bạn đoán chuẩn luôn'
+        }else {
+            if (number>numberRandom){
+                document.getElementById('result').innerHTML = 'Số bạn đoán đang lớn hơn số trúng thưởng'
+            }else {
+                document.getElementById('result').innerHTML = 'Số bạn đoán đang bé hơn số trúng thưởng'
+            }
+
+        }
+    }
+</script>
+</body>
+</html>

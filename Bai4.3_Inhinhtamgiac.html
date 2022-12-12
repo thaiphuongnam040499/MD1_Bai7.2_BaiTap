@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>In hình tam giác</title>
 </head>
 <body>
-
+<script>
+let bang = "<table>"
+for (let i = 0; i < 6; i++) {
+    bang= bang + "<tr>"
+    for (let j = 0; j <=i; j++) {
+        bang= bang + "<td>" + "*" + "</td>"
+    }
+    }bang=bang + "</tr>"
+bang= bang + "</table>"
+document.write(bang)
+</script>
 </body>
 </html>
