@@ -15,6 +15,26 @@ for (let i = 0; i < 6; i++) {
     }bang=bang + "</tr>"
 bang= bang + "</table>"
 document.write(bang)
+// hinh tam giac 2
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+        if (j>=i){
+            document.write('*')
+        }else {
+            document.write('&nbsp;&nbsp;')
+        }
+    }document.write('<br>')
+}
+// hinh tam giac 3
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+        if (i >= 4 -j){
+            document.write('*')
+        }else {
+            document.write('&nbsp;&nbsp;')
+        }
+    }document.write('<br>')
+}
 </script>
 </body>
 </html>
